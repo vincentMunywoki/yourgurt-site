@@ -12,40 +12,37 @@
     <div class="container">
         <!--Navigation-->
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
             <div class="container-fluid">
-              <nav class="navbar bg-body-tertiary">
-                <div class="container">
-                  <a class="navbar-brand" href="#">
-                    <img src="images/logo-dans-meat-yogurt.svg" alt="Bootstrap" width="30" height="24">
+              <nav class="navbar bg-body-teiary">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo-dans-meat-yogurt.svg" alt="Bootstrap" width="90" height="60">
                   </a>
-                </div>
+                
               </nav>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
+
+
+              <!--Butto dropdown-->
+
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Veen</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <ul class="navbar-nav ml-auto float-right">
+                  <li class="nav-item dropdown btn btn-outline-light mr-4" style="width: 120px;">
+                    <a class="nav-link dropdown-toggle  text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Flvours
+                    </a>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="#">Tam</a></li>
+                      <li><a class="dropdown-item" href="#">Beef</a></li>
+                      <li><a class="dropdown-item" href="#">Cicken</a></li>
+                      <li><a class="dropdown-item" href="#">Samaki</a></li>
+                    </ul>
                   </li>
 
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                  <li class="nav-item btn btn-outline-light" style="width: 120px;">
+                    <a class="nav-link text-white" aria-disabled="false">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -70,18 +67,38 @@
                           
         </div>
 
+        <!--Founders text-->
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <img src="images/headshot-dan.jpg" class="img-fluid border rounded-start border-lg border-0" alt="vincent pic">
+          </div>
+          <div class="col-12 col-md-8 bg-white p-5 d-flex align-items-center border border-dark rounded-end border-lg">
+            <section>
+              <h2>Text from our founder</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Possimus nisi in deserunt laudantium, quidem cupiditate
+                voluptate, rem corrupti quam exercitationem delectus natus
+                voluptas expedita minima dolore corporis? Laborum, ullam. Velit
+                 enim mollitia iste temporibus eius. Aliquid quas dolorem quod
+                 totam optio officia non explicabo, facilis soluta nostrum unde
+                 vero. Rem?</p>
+            </section>
+          </div>
+        </div>
+
+
          
-          <p></p>
+         
           <!--Courousel-->
-          <div id="carouselExample" class="carousel slide">
+          <div id="carouselExample" class="carousel slide d-none d-md-block carousel-fade">
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active" data-bs-interval="500">
                 <img src="images/yogurt-1.png" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="500">
                 <img src="images/yogurt-2.png" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="500">
                 <img src="images/yogurt-3.png" class="d-block w-100" alt="...">
               </div>
             </div>
@@ -97,31 +114,31 @@
 
         <!--Cards-->
 
-        <div class="card" style="width: 18rem;">
-            <img src="images/product1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="images/product2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-
-          <div class="card" style="width: 18rem;">
-            <img src="images/product3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+        <div class="card-group my-5">
+          <div class="card shadow m-1" style="width: 18rem;">
+              <img src="images/product1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://www.safaricom.com" class="btn btn-primary stretched-link">Go somewhere</a>
+              </div>
+          </div>
+          <div class="card shadow m-1" style="width: 18rem;">
+              <img src="images/product2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+              </div>
+          </div>
+            <div class="card shadow m-1" style="width: 18rem;">
+              <img src="images/product3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+              </div>
+          </div>
         </div>
 
 

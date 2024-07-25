@@ -30,3 +30,10 @@ h1{
 .btn-outline-light:hover{
     background-color: rgba(255, 255, 255, 0.445);
 }
+
+.btn-primary, .btn-primary:hover{
+    background-color: #00bbc9;
+    border-color: #00bbc9;
+
+}
+
